@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace trojuhelnik2
 {
-    class TrojuhelnikClass
+    class Trojuhelnik
     {
-
-        /// <summary>
-        /// asdasdasdasdasdasd
-        /// </summary>
         public double[] bod1 = new double[2];
         public double[] bod2 = new double[2];
         public double[] bod3 = new double[2];
@@ -21,7 +17,7 @@ namespace trojuhelnik2
         public double obsah = 0;
         public double obvod = 0;
         public bool pravouhlost = false;
-        public void Trojuhelnik(double b1x, double b1y, double b2x, double b2y, double b3x, double b3y)
+        public Trojuhelnik(double b1x, double b1y, double b2x, double b2y, double b3x, double b3y)
         {
             this.bod1[0] = b1x;
             this.bod1[1] = b1y;
@@ -47,15 +43,6 @@ namespace trojuhelnik2
             double s = Math.Sqrt(x * x + y * y);
             return s;
         }
-        /**
-* ... text ...
-*/
-        /**
-        * ... text ...
-        */
-        /**
-* ... text ...
-*/
 
         public void vypocitejStrany()
         {
