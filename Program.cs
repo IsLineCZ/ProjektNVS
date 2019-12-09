@@ -28,7 +28,6 @@ namespace trojuhelnik2
                 this.bod3[0] = b3x;
                 this.bod3[1] = b3y;
             }
-
             public bool jeSestrojitelny() {
                 bool JeSestrojitelny = true;
                 if ((bod1[0] == bod2[0] && bod1[0] == bod3[0]) || (bod1[1] == bod2[1] && bod1[1] == bod3[1])) {
@@ -56,6 +55,23 @@ namespace trojuhelnik2
                 this.obvod = (a + b + c);
             }
 
+            public bool UnitTestObvod()
+            {
+                int a = 2;
+                int b = 3;
+                int c = 4;
+                int vysledek1 = 9;
+                vypocitejObvod(a, b, c);
+
+                if (vysledek1 == this.obvod)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
             public void vypocitejObsah(double a, double b, double c) {
                 double s = (a + b + c) / 2;
                 this.obsah = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
@@ -111,8 +127,23 @@ namespace trojuhelnik2
             else {
                 Console.WriteLine("Není pravoúhlý");
             }
+
+            if (t1.UnitTestObvod() == true)
+            {
+                Console.WriteLine("Unit test proběhl v pořádku.");
+            }
+            else
+            {
+                Console.WriteLine("Unit test neproběhl v pořádku.");
+            }
+
             
-            Console.ReadLine();         
+            Console.ReadLine();
+            
+
+            
+
+
         }
     }
 }
