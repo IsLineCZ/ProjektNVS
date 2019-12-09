@@ -28,6 +28,10 @@ namespace trojuhelnik2
                 this.bod3[0] = b3x;
                 this.bod3[1] = b3y;
             }
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <returns></returns>
             public bool jeSestrojitelny() {
                 bool JeSestrojitelny = true;
                 if ((bod1[0] == bod2[0] && bod1[0] == bod3[0]) || (bod1[1] == bod2[1] && bod1[1] == bod3[1])) {
@@ -54,6 +58,15 @@ namespace trojuhelnik2
             public void vypocitejObvod(double a, double b, double c) {
                 this.obvod = (a + b + c);
             }
+            /**
+* ... text ...
+*/
+            /**
+            * ... tdfafasfasf
+            */
+            /**
+ * ... text ...
+ */
 
             public bool UnitTestObvod()
             {
@@ -105,6 +118,15 @@ namespace trojuhelnik2
         }
         static void Main(string[] args)
         {
+            /**
+* ... text ...
+*/
+            /**
+            * ... tdfafasfasf
+            */
+            /**
+ * ... text ...
+ */
             Trojuhelnik t1 = new Trojuhelnik(0, 0, 2, 0, 0, 2);
             if (t1.jeSestrojitelny() == true)
             {
