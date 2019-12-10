@@ -17,6 +17,10 @@ namespace trojuhelnik2
         public double obsah = 0;
         public double obvod = 0;
         public bool pravouhlost = false;
+
+        /**
+        * Konstruktor třídy Trojuhelnik.
+        */
         public Trojuhelnik(double b1x, double b1y, double b2x, double b2y, double b3x, double b3y)
         {
             this.bod1[0] = b1x;
@@ -26,6 +30,11 @@ namespace trojuhelnik2
             this.bod3[0] = b3x;
             this.bod3[1] = b3y;
         }
+
+        /**
+        * Metoda pro zjištění sestrojitelnosti trojuhelníku.
+        * Funkce: Součet dvou stran musí být větší než strana třetí.
+        */
         public bool jeSestrojitelny()
         {
             bool JeSestrojitelny = true;
@@ -36,6 +45,10 @@ namespace trojuhelnik2
             return JeSestrojitelny;
         }
 
+        /**
+        * Metoda pro zjištění velikosti přepony trojuhelníku.
+        * Funkce: Využití Pythagorovy věty.
+        */
         public double delkaS(double x1, double y1, double x2, double y2)
         {
             double x = x1 - x2;
@@ -44,6 +57,10 @@ namespace trojuhelnik2
             return s;
         }
 
+        /**
+        * Metoda pro vypočet velikosti stran trojuhelníku.
+        * Funkce: Převede body na délku.
+        */
         public void vypocitejStrany()
         {
             this.a = this.delkaS(this.bod1[0], this.bod1[1], this.bod2[0], this.bod2[1]);
@@ -52,11 +69,19 @@ namespace trojuhelnik2
 
         }
 
+        /**
+        * Metoda pro vypočet obvodu trojuhelníku.
+        * Funkce: Využití vzorce a + b + c
+        */
         public void vypocitejObvod(double a, double b, double c)
         {
             this.obvod = (a + b + c);
         }
 
+        /**
+        * UnitTest na zkoušku funkčnosti motedy pro výpočet obvodu.
+        * Funkce: Porovná natvrdo zadaný výsledek s výsledkem metody pro výpočet obvodu.
+        */
         public bool UnitTestObvod()
         {
             int a = 2;
@@ -74,12 +99,21 @@ namespace trojuhelnik2
                 return false;
             }
         }
+
+        /**
+        * Metoda pro vypočet obsahu trojuhelníku.
+        * Funkce: využití Heronova vzorce.
+        */
         public void vypocitejObsah(double a, double b, double c)
         {
             double s = (a + b + c) / 2;
             this.obsah = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
         }
 
+        /**
+        * Metoda pro výpočet pravoúhlosti trojuhelníku.
+        * Funkce: využití Pythagorovy věty.
+        */
         public void jePravouhly()
         {
             if (a > b && a > c)
