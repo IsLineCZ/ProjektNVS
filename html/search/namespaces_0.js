@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trojuhelnik2_12',['trojuhelnik2',['../namespacetrojuhelnik2.html',1,'']]]
+  ['trojuhelnik2_13',['trojuhelnik2',['../namespacetrojuhelnik2.html',1,'']]]
 ];
