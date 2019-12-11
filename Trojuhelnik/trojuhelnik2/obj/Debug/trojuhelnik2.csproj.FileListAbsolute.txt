@@ -19,3 +19,10 @@ C:\Users\Jakub\Desktop\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.csprojAss
 C:\Users\Jakub\Desktop\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.csproj.CoreCompileInputs.cache
 C:\Users\Jakub\Desktop\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.exe
 C:\Users\Jakub\Desktop\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.pdb
+F:\Projekt\Trojuhelnik\trojuhelnik2\bin\Debug\trojuhelnik2.exe.config
+F:\Projekt\Trojuhelnik\trojuhelnik2\bin\Debug\trojuhelnik2.exe
+F:\Projekt\Trojuhelnik\trojuhelnik2\bin\Debug\trojuhelnik2.pdb
+F:\Projekt\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.csprojAssemblyReference.cache
+F:\Projekt\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.csproj.CoreCompileInputs.cache
+F:\Projekt\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.exe
+F:\Projekt\Trojuhelnik\trojuhelnik2\obj\Debug\trojuhelnik2.pdb

@@ -73,9 +73,9 @@ namespace trojuhelnik2
         * Metoda pro vypočet obvodu trojuhelníku.
         * Funkce: Využití vzorce a + b + c
         */
-        public void vypocitejObvod(double a, double b, double c)
+        public double vypocitejObvod(double a, double b, double c)
         {
-            this.obvod = (a + b + c);
+            return (a + b + c);
         }
 
         /**
@@ -84,22 +84,23 @@ namespace trojuhelnik2
         */
         public bool UnitTestObvod()
         {
-            int a = 2;
-            int b = 3;
-            int c = 4;
+            int x = 2;
+            int y = 3;
+            int z = 4;
             int vysledek1 = 9;
-            vypocitejObvod(a, b, c);
-
-            if (vysledek1 == this.obvod)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            double v = vypocitejObvod(x, y, z);
+            
+                        if (vysledek1 == v)
+                        {
+                           return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+          
         }
-
+        
         /**
         * Metoda pro vypočet obsahu trojuhelníku.
         * Funkce: využití Heronova vzorce.
